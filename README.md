@@ -35,7 +35,7 @@ For example, the following file (K4.txt) represents the complete graph on four v
 
 A larger example of a graph file (used in our experiments) is "artist.txt" and "artist-SC.txt" (its sparse certificate for 4-edge connectivity).
 
-Every 3-cut or 4-component program P is called as ./P <input_graph> <output_file>.
+Every 3-cut or 4-component program P runs with ./P <input_graph> <output_file>.
 
 For the get3cuts* programs, the output_file contains the 3-edge cuts of the (3-edge-connected) input graph, and has the following format.
   * The first line contains the number k of 3-edge cuts.
@@ -74,10 +74,10 @@ For example, a sample run of ./get4eComponentsGIK K4.txt out.txt gives as output
 We also provide the following additional programs.
 
 genrand.cpp generates a random multigraph, with a specified number of vertices and edges.
-It is called as ./genrand n m seed <output_graph>, where n is the number of vertices, m is the number of edges, and seed is a number to initialize the rand function.
+It runs with ./genrand n m seed <output_graph>, where n is the number of vertices, m is the number of edges, and seed is a number to initialize the rand function.
 
-make3eConnected.cpp make a general graph 3-edge-connected by introducing a few more edges to the graph.  
-It is called as ./make3eConnected <input_graph> <output_graph>.
+make3eConnected.cpp makes a general graph 3-edge-connected by introducing a few more edges to the graph.  
+It runs with ./make3eConnected <input_graph> <output_graph>.
 
-sparsify.cpp creates a sparse certificate of a graph (for 4-edge connectivity). It is called as ./sparsify <input_graph> <output_graph>.
+sparsify.cpp creates a sparse certificate of a graph (for 4-edge connectivity). It runs with ./sparsify <input_graph> <output_graph>.
 
