@@ -2,11 +2,13 @@ This repository is an accompaniment to ESA22 Track B paper 60, titled "Computing
 
 It contains implementations of various linear-time algorithms for computing 3-edge-cuts in 3-edge-connected undirected graphs, and 4-edge-connected components in general undirected graphs.
 
-The programs get3cutsGIK, get3cutsLinear, get3cutsNRSS and get3cutsNRSSsort, compute all 3-edge cuts of a 3-edge-connected graph.
+The programs get3cutsGIK, get3cutsLinear, get3cutsLinearNew, get3cutsNRSS and get3cutsNRSSsort, compute all 3-edge cuts of a 3-edge-connected graph.
 
  * get3cutsGIK implements the algorithm of Georgiadis, Italiano, and Kosinas. (Full version at: https://arxiv.org/abs/2105.02910.)
 
  * get3cutsLinear implements our improved algorithm which runs in linear time in pointer-machines. (See https://arxiv.org/abs/2108.08558.)
+ 
+ * get3cutsLinearNew is a faster version of get3cutsLinear, that avoids the use of the (low_MD,low_M) edge.
 
  * get3cutsNRSS and get3cutsNRSSsort implement two different variations of (an improvement of) the randomized algorithm of Nadara, Radecki, Smulewicz, and Sokołowski. (Full version at: https://arxiv.org/abs/2105.01699.) 
 
